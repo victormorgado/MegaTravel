@@ -72,7 +72,13 @@ nav {
     align-items: center;
     vertical-align: text-bottom;
     height: 100%;
+    width: 8%;
   }
+  .socialimg{
+    height: 30px;
+    width: auto;
+  }
+  
   
   #home{
     height: 100%;

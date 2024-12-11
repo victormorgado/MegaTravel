@@ -17,7 +17,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
   }
   
   nav ul {
@@ -48,9 +47,7 @@ nav {
     /* margin: 20px; */
   }
   
-  h1 {
-    margin-bottom: 20px;
-  }
+ 
   
   div {
     margin-bottom: 10px;
@@ -71,6 +68,7 @@ nav {
     float: left;
     align-items: center;
     vertical-align: text-bottom;
+    text-align: center;
     height: 100%;
     width: 8%;
   }
@@ -79,18 +77,35 @@ nav {
     width: auto;
   }
   
+  .container{
+    
+    height: auto;
+    background-color: #1e1836d8;
+    border-radius: 10px;
+    padding: 15px;
+  }
   
-  #home{
+  .home{
     height: 100%;
+    margin-left: 8%;
   }
 
   input[type="text"],
   input[type="number"],
+  input[type="email"],
+  textarea,
   select {
     width: 200px;
     padding: 5px;
     border-radius: 12px;
     border-style: none;
+  }
+
+  .contactusInput{
+    background-color: #292558a8;
+    width: 300px;
+    border-style: solid;
+    color: white;
   }
   
   button {

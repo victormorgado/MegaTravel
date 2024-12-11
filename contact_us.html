@@ -12,9 +12,6 @@
             <li><a href="./travel_recommendation.html" id="home">Home </a></li>
             <li><a href="./about_us.html" id="home">About Us </a></li>
             <li><a href="./contact_us.html" id="contact">Contact Us </a></li>
-            <li><input type="text" id="conditionInput" placeholder="Enter a destination">  </li>
-            <li><button id='btnSearch'>Search</button></li>
-            <li><button id='btnClear'>Clear</button></li>
         </ul>
     </nav>
     <main id=main>
@@ -27,15 +24,30 @@
                     <li ><br><a href="#"><img class="socialimg" src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"></a> </li>
                 </ul>
             </aside>
-            <section id=home>
+            <section class=home>
                 <br>
                 <br>
                 <br>
-                <h1 style="font-weight: bold; font-size: 60px; width: 70%">EXPLORE DREAM DESTINATION</h1>
+                <h1 style="font-weight: bold; font-size: 60px; width: 70%">CONTACT US</h1>
                 <br>
-                <p style="width: 40%">At Mega Travel, we believe that every journey tells a story, and we're here to help you craft yours. Whether you're seeking breathtaking destinations, curated itineraries, or seamless travel planning, we've got you covered.</p>
-                <br>
-                <button type="submit" onclick="thankyou()" style="padding: 20px 50px;">BOOK NOW</button>
+                <div class="container" style="width: 50%;margin-left: 10%">
+                    <form id="contactForm" style="margin-left: 15px">
+                        <div>
+                            <label for="name">Name</label><br>
+                            <input type="text" id="name" name="name"  class="contactusInput" required>
+                        </div>
+                        <div>
+                            <label for="email">Email</label><br>
+                            <input type="email" id="email" name="email"  class="contactusInput" required>
+                        </div>
+                        <div>
+                            <label for="message">Message</label><br>
+                            <textarea id="message" name="message" rows="5" class="contactusInput" required></textarea>
+                        </div>
+                        <button type="submit" onclick="thankyou()" style="padding: 10px 60px;">Submit</button>
+                    </form>
+  
+                </div>
                 <br>
                 <br>
                 <br>
@@ -43,5 +55,10 @@
             
         
     </main>
+    <script>
+        function thankyou(){
+            alert('Thank you for contacting us!')
+        }
+    </script>
 </body>
 </html>
